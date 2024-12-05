@@ -32,7 +32,7 @@ function App() {
             <h1 className="my-5 text-center fw-bolder">ToDo List</h1>
 
             <div className="inp d-flex gap-3 align-items-center"> 
-              <span className=""><input type="text" className="border border-2 border-dark" placeholder="Add anew todo" value={inputvalue} onChange={getinput} required /></span>
+              <span className=""><input type="text" className="border border-2 border-dark" placeholder="Add a new todo" value={inputvalue} onChange={getinput} required /></span>
               <span className="">
                 <button type="button" className="btn-2 btn p-2" onClick={addtodos}>Add</button>
               </span>
@@ -44,7 +44,7 @@ function App() {
                 {
                   todos.map((todo) => {
                     return (
-                      <li className="todo-li p-1 mb-1 list1 bg-light" key={todo.id}>
+                      <li className="todo-li p-1 mb-1 list1 bg-dark" key={todo.id}>
                         {todo.text}{""}
                         <button type="button" className="" onClick={() => Removetodo(todo.id)}>Remove<i class="bi bi-trash3 "></i></button>
                       </li>
