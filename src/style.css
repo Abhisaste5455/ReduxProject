@@ -1,0 +1,141 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e3a5f, #102a43);
+    color: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px; /* Increased width for better layout */
+    width: 90%; /* Responsive for smaller screens */
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background: #cc380b;
+    overflow: hidden;
+}
+
+/* Section Styles */
+.todo-section {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.todo-section h1 {
+    font-size: 2.5rem; /* Slightly larger title */
+    margin-bottom: 20px;
+    color: #a7c5eb;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Input and Button Styles */
+.todo-div {
+    margin-top: 20px;
+    gap: 15px; /* Add spacing between elements */
+}
+
+.todo-div input[type="text"] {
+    width: 100%; /* Full width for better alignment */
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #2563eb;
+    border-radius: 5px;
+    background: #f1f5f9;
+    color: #102a43;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.todo-div input[type="text"]::placeholder {
+    color: #2563eb;
+}
+
+.todo-div button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: #38bdf8;
+    color: #f1f5f9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: center; /* Center the button */
+}
+
+.todo-div button:hover {
+    background: #0ea5e9;
+}
+
+/* Todo List Styles */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
+    background: #bfdbfe;
+    color: #1e293b;
+    padding: 12px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+}
+
+li button {
+    background: transparent;
+    color: #2563eb;
+    border: 2px solid #2563eb;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+li button:hover {
+    background: #0ea5e9;
+    color: #f1f5f9;
+    border: 2px solid #0ea5e9;
+}
+
+.btn-2 {
+    height: 49px;
+    width: 50px;
+}
+
+.inp button {
+    background: #22c55e;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%; /* Full width for smaller screens */
+    }
+
+    .todo-div {
+        flex-direction: column;
+        gap: 10px; /* Smaller gap for compact layout */
+    }
+
+    li {
+        flex-direction: column; /* Stack items */
+        align-items: flex-start;
+    }
+
+    li button {
+        margin-top: 10px;
+    }
+}
